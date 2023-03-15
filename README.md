@@ -2,7 +2,7 @@
 
 Just a personal cheat sheet how to use the GIT command line.
 
-Here is a link to the [cheat sheet](https://mm65de.github.io/gitCheatSheet/)
+Here is a link to the **[Cheat Sheet](https://mm65de.github.io/gitCheatSheet/)**
 
 The sources of the sheet is stored in folder `src`.
 After every commit resp. push to the repository the sources are automatically compiled to the one and only file index.html.
