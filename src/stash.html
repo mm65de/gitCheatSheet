@@ -1,0 +1,46 @@
+
+    <div>
+      <h1>git stash</h1>
+      
+      <h2>git stash </h2>
+      <h2>git stash push</h2>
+      <p>
+        Stash staged files away. 
+        Unstaged files remain untouched.
+      </p>
+      
+      <h2>git stash push -u</h2>
+      <p>
+        Stash all the workspace modifications away (staged and unstaged). 
+        Workspace becomes clean HEAD.
+      </p>
+      
+      <h2>git stash -m "my stash message"</h2>
+      <p>Provide a special stash description instead of the automatically generated one.</p>
+      
+      <h2>git stash list</h2>
+      <p>
+        List the zero based stack of stashed change sets. 
+        With parameter <i>-p</i> you see modified lines.
+      </p>
+      
+      <h2>git stash show</h2>
+      <p>Show the list of the staged files in last stash set.</p>
+      
+      <h2>git stash show -u 2</h2>
+      <p>Show the list of third youngest (2) stash set including also its unstaged (-u) files, if any.</p>
+      
+      <h2>git stash show -p 2</h2>
+      <p>Show the modifications (-p) in the third youngest (2) stash set.</p>
+      
+      <h2>git stash apply 2</h2>
+      <p>Merge the third youngest (2) stash set (potentially including also unstaged files) into the workspace.</p>
+      
+      <h2>git stash pop</h2>
+      <p>Merge the youngest stash set into the workspace and remove the set from the stash stack.</p>
+      
+      <h2>git stash drop 2</h2>
+      <p>Remove the third youngest (2) stash set from the stash stack.</p>
+      
+    </div>
+  

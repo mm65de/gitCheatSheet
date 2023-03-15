@@ -1,0 +1,95 @@
+
+    <div>
+      <h1>git config</h1>
+      
+      <h2>git config</h2>
+      <p>Show a usage page with most important options and commands.</p>
+      
+      <h2>git config --list</h2>
+      <p>Show all configuration values. If a configuration is shown several times, the latter takes precedence.</p>
+      
+      <h2>git config --list --show-origin </h2>
+      <p>Show all configuration values and where they are configured.</p>
+      
+      <h2>git config --list --system</h2>
+      <h2>git config --list --global</h2>
+      <h2>git config --list --local </h2>
+      <p>
+        Show the configuration options for only one config location. 
+        <i>local</i> takes precedence over <i>global</i>, <i>global</i> takes precedence over <i>system</i>.<br>
+        <b>system:</b> C:/Program Files/Git/etc/gitconfig <br>
+        <b>global:</b> C:/Users/mmueller/.gitconfig <br>
+        <b>local:</b> .git/config &nbsp; &nbsp; <small><i>(default; local repo)</i></small><br>
+      </p>
+      <p>
+        Configurations are never stored in remote repositories.<br>
+      </p>
+      
+      <h2>git config --global core.autocrlf  false</h2>
+      <h2>git config --global core.autocrlf  input</h2>
+      <h2>git config --global --unset core.eol </h2>
+      <p>Suppress globally any conversion of end-of-line characters on checkout or commit.</p>
+      
+      <h2>
+        git config --global core.excludesfile "C:\Users\mmueller\.gitignore"
+      </h2>
+      <p>
+        Use the file <i>.gitignore</i> in your user folder globally.
+      </p>
+
+      <h2>
+        git config --global pull.rebase true
+      </h2>
+      <p>
+        Do not <i>merge</i> but <i>rebase</i> the locally committed changes, 
+        when executing a <i>pull</i> and fast forward is not possible.
+      </p>
+      
+      <h2>
+        git config --global fetch.prune true
+      </h2>
+      <p>
+        Modify the <i>fetch</i> command:  
+        When fetching, also delete locally all copies of remote branches, 
+        that do not exist on server side anymore. 
+      </p>
+      
+      <h2>
+        git config --global init.defaultbranch main
+      </h2>
+      <p>
+        Use <i>main</i> as default branch name instead of <i>master</i>.
+      </p>
+      
+      <h2>
+        git config --global color.diff.meta "blue black bold"
+      </h2>
+      <p>
+        Fix the problem that the meta information is shown in black font. 
+        Here it is set to bold blue on black background.
+      </p>
+      
+      <h2>
+        git config --global pretty.mamue 
+          "    %Cred %h %Cgreen %an %C(yellow)  %ai %C(auto) %d %C(cyan) %s %Creset "
+      </h2>
+      <p>
+        Define a condensed format called <i>mamue</i>.
+        You use it by: <i>--pretty=mamue</i>
+      </p>
+      
+      <h2>git config --global alias.l  "log --graph --pretty=mamue"</h2>
+      <p>
+        Define the new command <i>l</i>. 
+        Now <i>git l</i> shows informative and compact history.
+      </p>
+      
+      <h2>git config --global alias.ll  "log --graph --pretty=mamue --remotes --branches --date-order"</h2>
+      <p>
+        Define the new command <i>ll</i>. 
+        Now <i>git ll</i> shows informative and compact history 
+        of all remote repos and branches.
+      </p>
+      
+    </div>
+    

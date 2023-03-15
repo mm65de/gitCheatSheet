@@ -1,0 +1,42 @@
+
+    <div>
+      <h1>git remote</h1>
+      
+      <h2>git remote</h2>
+      <p>Show a list of existing remotes.</p>
+      
+      <h2>git remote -v</h2>
+      <p>Show a list of existing remotes together with their fetch and push URLs.</p>
+      
+      <h2>git remote add <i>remote</i> <i>URL</i></h2>
+      <p>Add a remote with the name <i>remote</i> based on the URL <i>URL</i>.</p>
+      
+      <h2>git remote add origin https://github.com/mm65de/myproj.git</h2>
+      <p>
+        After creating the project <i>C:\dev\proj\github\myproj</i> with IntelliJ 
+        and committing all files to the local branch <i>main</i> 
+        and creating the private and empty project <i>myproj</i> 
+        via the GitHub website, 
+        the command above connects this local git repo 
+        with the GitHub project. 
+        The next command should be <i>git push origin main</i> 
+        to push all local changes to GitHub.</p>
+      
+      <h2>git remote remove <i>remote</i></h2>
+      <p>Remove the remote with the name <i>remote</i>.</p>
+      
+      <h2>git remote prune -n       origin</h2>
+      <h2>git remote prune –dry-run origin</h2>
+      <p>
+        Show which remote branches do not exist on <i>origin</i> anymore 
+        and will be locally deleted, if you omit the option <i>-n</i> or <i>--dry-run</i>.
+      </p>
+
+      <h2>git remote prune origin</h2>
+      <p>
+        Delete locally all copies of remote branches, 
+        that do not exist anymore in the repo <i>origin</i> on server side.
+      </p>
+      
+    </div>
+    

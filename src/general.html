@@ -1,0 +1,51 @@
+
+    <div>
+      <h1>GIT URLs etc.</h1>
+      <h2>ssh://usr@host:port/dir/prj.git</h2>
+      <p>
+        Here is another 
+        <a href="https://www.git-tower.com/blog/git-cheat-sheet">cheat sheet</a>.<br>
+        And here comes the
+        <a href="https://git-scm.com/docs">full documentation</a>.<br>
+        <a href="https://stackoverflow.com/questions/40978921/how-to-add-chmod-permissions-to-file-in-git/40979016"
+          >How to add chmod permissions to file in GIT?</a><br>
+        <a href="https://github.com/mhagger/git-imerge"
+          >imerge: Incremental Merge</a><br>
+      </p>
+      <p>
+        There are four data locations:
+      </p>
+      <table>
+        <tr>
+          <td>1.</td>
+          <td>Local Workspace</td>
+          <td>Local folder tree containig the physical files under construction.</td>
+        </tr>
+        <tr>
+          <td>2.</td>
+          <td>Local repository</td>
+          <td>Local branches and their modifications.</td>
+        </tr>
+        <tr>
+          <td>3.</td>
+          <td>Local copy of remote repositories</td>
+          <td>All data of all configured remotes (<i>remote tracking branches</i>), each of them according to their last fetch date.</td>
+        </tr>
+        <tr>
+          <td>4.</td>
+          <td>The real remote repositories, possibly more than one.</td>
+          <td>All data of all configured remotes, each of them according to their last fetch date.</td>
+        </tr>
+      </table>
+      <p>
+        The one and only <b>HEAD</b> may be <i>detached</i>. 
+        Then it points to the last revision checked out. 
+        Further commits do not move this HEAD.<br>
+        HEAD may be <i>attached</i> to a <i>local</i> branch. 
+        Then it automatically follows all following commits of that branch.<br>
+        Attaching HEAD to a remote tracking branch or a revision is not possible.<br>
+        Committing changes in detached state is possible, 
+        but the changes tend to get lost because of the missing named reference.
+      </p>
+    </div>
+    

@@ -1,0 +1,58 @@
+
+    <div>
+      <h1>git fetch  &amp; git pull  &amp; git push</h1>
+      
+      <h2>git fetch</h2>
+      <p>
+        Fetch all changes and even new branches from the repo <i>origin</i>.
+        Do not move any tags. Therefore there is no kind of any merge. 
+        Only <i>fetch</i>, <i>pull</i> and <i>push</i> work with remote repos.
+        All other commands work on the local repo only, even if they show "remote" tags.
+      </p>
+      
+      <h2>git fetch --all</h2>
+      <p>Fetch all changes from all remote repos, not only from <i>origin</i>.</p>
+      
+      <h2>git fetch --prune</h2>
+      <p>
+        Same as <i>fetch</i>, but delete locally all copies of remote branches,
+        that do not exist anymore in the repo <i>origin</i> on server side.
+      </p>
+      
+      <h2>git pull</h2>
+      <p>
+        Same as <i>git fetch</i> followed by <i>git merge FETCH_HEAD</i>. 
+        Incorporate changes from remote repo into the current branch.
+        If the merge is successful, then there is an automatic commit.
+      </p>
+      
+      <h2>git pull --no-commit</h2>
+      <p>Don't perform any autocommit, if the merge succeeds.</p>
+      
+      <h2>git push</h2>
+      <p>Update the remote branch according to the local one with the same name.</p>
+      
+      <h2>git push --all</h2>
+      <p>Update all remote branches according to the local ones.</p>
+      
+      <h2>git push origin mybranch</h2>
+      <p>
+        Push my new branch <i>mybranch</i> to the remote repository <i>origin</i>, 
+        but do not set it as upstream branch.
+      </p>
+      
+      <h2>git push --set-upstream origin mybranch</h2>
+      <p>
+        Push my new branch <i>mybranch</i> to the remote repository <i>origin</i>, 
+        and also set it as the upstream branch of my local branch.<br>
+        This is the mostly used approach to publish new branches to remote repositories.
+      </p>
+      
+      <h2>git push origin --delete feature/CRED-11585</h2>
+      <p>Remove the remote branch <i>feature/CRED-11585</i> from the remote repository <i>origin</i>.</p>
+      
+      <h2>git push ... --dryrun --verbose</h2>
+      <p>Report in detail what the push without the <i>--dryrun</i> would do.</p>
+      
+    </div>
+    

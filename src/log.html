@@ -1,0 +1,69 @@
+
+    <div>
+      <h1>git log</h1>
+      
+      <h2>git log</h2>
+      <p>Show one page of the newest changes, the newest first.</p>
+      
+      <h2>git log -25 --reverse</h2>
+      <p>Show the 25 newest changes, the newest changes last.</p>
+      
+      <h2>git log --oneline</h2>
+      <p>Show each change on a single line only.</p>
+      
+      <h2>git log --graph</h2>
+      <p>Draw lines at the left to show the branches and merges.</p>
+      
+      <h2>git log --branches --remotes --decorate=full</h2>
+      <p>Show also all branch and remote tags. Do not abbreviate them.</p>
+      
+      <h2>git log --format=full</h2>
+      <p>Show more commit information.</p>
+      
+      <h2>git log --raw</h2>
+      <p>Show also the files that were modified / added / removed by each commit.</p>
+      
+      <h2>git log <i>file</i></h2>
+      <p>Show all commits that changed <i>file</i>.</p>
+      
+      <h2>git log -p</h2>
+      <p>
+        Show each commit with a patch, 
+        that describes the concrete changes of this commit.
+      </p>
+      
+      <h2>git log --stat=250</h2>
+      <p>
+        Show each commit with a list of file paths that are changed. 
+        Also show the count of changed lines.
+        <i>=250</i> is the maxwidth and may be omitted.
+      </p>
+      
+      <h2>git log --shortstat</h2>
+      <p>
+        Show each commit with an additional line, 
+        that summarizes the count of modified files, added lines and deleted lines.
+      </p>
+      
+      <h2>git log affe567 bcd1234.. tag42..</h2>
+      <p>
+        Show revision <i>affe567</i> and all ancestor revisions 
+        in the current branch, but except the revision <i>bcd1234..</i>
+        and its ancestors and except the revision 
+        of tag <i>tag42</i> and all of its ancestors.
+      </p>
+      
+      <h2>git log --grep="DR-360"</h2>
+      <p>
+        Show all revisions, 
+        whose commit messages contain <i>DR-360</i>
+        in the current branch.
+      </p>
+      
+      <h2>git l master origin/master branch1 origin/branch1 --</h2>
+      <p>
+        Show the history of all four branches together.
+      </p>
+      
+    </div>
+    

@@ -1,0 +1,60 @@
+
+    <div>
+      <h1>git branch</h1>
+      
+      <h2>git branch</h2>
+      <h2>git branch --list</h2>
+      <p>List all local branches.</p>
+      
+      <h2>git branch --list -v</h2>
+      <p>List all local branches, their last commit comment and hash and optionally how much it differs from the remote tracking branch.</p>
+      
+      <h2>git branch --list -vv</h2>
+      <p>Same as -v, but also show the remote tracking branch name.</p>
+      
+      <h2>git branch -r</h2>
+      <p>List all remote branches.</p>
+      
+      <h2>git branch -r  --list  *CRED-111*</h2>
+      <p>List all remote branches whose name contains the substring "CRED-111".</p>
+      
+      <h2>git branch -a</h2>
+      <p>List all local and remote branches.</p>
+      
+      <h2>git branch --merged</h2>
+      <p>List all branches that are merged into the current branch.</p>
+      
+      <h2>git branch --no-merged</h2>
+      <p>List all branches that have not yet been merged into the current branch.</p>
+      
+      <h2>git branch feature/CRED-11585</h2>
+      <p>
+        Create the local branch <i>feature/CRED-11585</i>. 
+        To create it also in the remote repository, 
+        you need to use a <i>git push</i> command with the option <i>--set-upstream</i>.
+      </p>
+      
+      <h2>git branch  --set-upstream-to=origin/main  main</h2>
+      <p>Set <i>origin/main</i> as upstream branch of local branch <i>main</i>.</p>
+      
+      <h2>git branch -d feature/CRED-11585</h2>
+      <p>Remove the local branch <i>feature/CRED-11585</i>.</p>
+      
+      <h2>git branch -D feature/CRED-11585</h2>
+      <p>Remove the local branch <i>feature/CRED-11585</i>, even if it is not merged to master.</p>
+      
+      <h2>git branch -D -r origin/feature/CRED-11585</h2>
+      <p>
+        Remove the local copy of the remote branch <i>origin/feature/CRED-11585</i> from the local repo.<br>
+        If you want to remove the branch from the remote server, you have to use an according push command. 
+      </p>
+      
+      <h2>git branch -f mybranch 123affe</h2>
+      <p>
+        Set the branch <i>mybranch</i> to the revision <i>123affe</i>, 
+        even if the branch <i>mybranch</i> already exists. 
+        If the revision is omitted, use <i>HEAD</i> instead. 
+      </p>
+      
+    </div>
+  

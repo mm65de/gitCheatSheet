@@ -1,0 +1,27 @@
+
+    <div>
+      <h1>git tag</h1>
+      
+      <h2>git tag 0.0.0</h2>
+      <p>Create a local tag on HEAD named 0.0.0</p>
+      
+      <h2>git tag -d 0.0.0</h2>
+      <p>Delete the local tag named 0.0.0</p>
+      
+      <h2>git push origin 0.0.0</h2>
+      <p>Push the tag 0.0.0 to the remote repo.</p>
+      
+      <h2>git push origin --delete 0.0.0</h2>
+      <p>Delete the tag 0.0.0 from the remote repo.</p>
+      
+      <p/>
+      <p>
+        With <i>git pull</i> only tags are pulled that do not exist locally yet.<br>
+        Local tags will neither be updated nor dropped by <i>git pull</i>, 
+        so tags may remain different between the repositories even after <i>git pull</i>.<br>
+        You have to drop all local tags before you do a <i>git pull</i>, 
+        if you want to be sure that you have exactly the same tags as on remote.
+      </p>
+      
+    </div>
+    
