@@ -16,4 +16,4 @@ jobs:
       - name: Process index.php
         run: php -f docs/index.php
       - name: Never use a secret value in echo command!
-        run: echo ${{ MY_FIRST_SECRET }}
+        run: echo ${{ secrets.MY_FIRST_SECRET }}
