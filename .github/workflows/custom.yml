@@ -38,6 +38,7 @@ jobs:
         run:  php --version
       - name: Process index.php
         run: |
+          mkdir docs
           cd src
           php -f index.php > ../docs/index.html
       - name: Setup Pages
