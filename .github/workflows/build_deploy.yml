@@ -13,9 +13,5 @@ jobs:
           php-version: '7.4'
       - name: show php version
         run:  php --version
-      - name: Run a one-line script
-        run: echo Hello, world!
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+      - name: Process index.php
+        run: php -f docs/index.php
