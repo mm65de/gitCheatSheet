@@ -10,3 +10,5 @@ This file contains everything, the CSS definitions and even the favorite icon, s
 The site is responsive and can easily be used on mobile phones.
 
 Enjoy it!
+
+If you find any problems, please feel free to create a [bug ticket](https://github.com/mm65de/gitCheatSheet/issues).
