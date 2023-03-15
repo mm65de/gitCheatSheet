@@ -14,3 +14,5 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+      - name: install PHP
+        run: sudo apt install php7.4-cli
