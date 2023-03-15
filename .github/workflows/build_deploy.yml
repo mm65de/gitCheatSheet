@@ -8,13 +8,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: '7.4'
+      - name: show php version
+        run:  php --version
       - name: Run a one-line script
         run: echo Hello, world!
       - name: Run a multi-line script
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-      - name: apt update and upgrade
-        run: sudo apt update & sudo apt upgrade
-      - name: install PHP
-        run: sudo apt install php7.4-cli
