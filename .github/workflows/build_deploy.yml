@@ -18,8 +18,9 @@ jobs:
       - name: Show generated output
         run: cat docs/index.html
       - name: commit and push generated file
-        run: git add docs/index.html && \
-             git commit -m "Update generated html file automatically." && \
-             git push
+        run: |
+             /usr/bin/git add docs/index.html
+             /usr/bin/git commit -m "Update generated html file automatically."
+             /usr/bin/git push
       - name: Never use a secret value in echo command!
         run: echo "${{ secrets.MY_FIRST_SECRET }}"
