@@ -14,6 +14,8 @@ jobs:
       - name: show php version
         run:  php --version
       - name: Process index.php
-        run: php -f docs/index.php
+        run: cd src && php -f index.php > ../docs/index.html
+      - name: Show generated output
+        run: cat docs/index.html
       - name: Never use a secret value in echo command!
         run: echo "${{ secrets.MY_FIRST_SECRET }}"
