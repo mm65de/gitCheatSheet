@@ -20,6 +20,7 @@
     <?php include 'config.html'?> 
     <?php include 'init.html'?> 
     <?php include 'add-reset.html'?> 
+    <?php include 'restore.html'?> 
     <?php include 'status.html'?> 
     <?php include 'log.html'?> 
     <?php include 'diff.html'?> 
