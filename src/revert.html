@@ -1,0 +1,25 @@
+
+    <div>
+      <h1>git revert</h1>
+      
+      <h2>git revert 1542affe</h2>
+      <p>
+        Create a new commit that reverts all changes of the commit <i>1542affe</i>.
+        Build the commit message from the reverted commit, prepending it by the word "Revert".
+      </p>
+      
+      <h2>git revert b1..b2</h2>
+      <p>
+        Revert all the changes contained in branch b2 but not in branch b1.
+        Create a new commit for every reverted commit. 
+        Do this reverting in reverse order.
+      </p>
+      
+      <h2>git revert ^b1 b2</h2>
+      <p>
+        Revert the commit b1, then the commit b2. 
+        This means that <i>^b1 b2</i> is NOT the same as <i>b1..b2</i> as it is in other cases!
+      </p>
+      
+    </div>
+    
