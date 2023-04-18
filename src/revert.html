@@ -12,7 +12,11 @@
       <h2>git revert -m 1 1542affe</h2>
       <p>
         Same as above, but <i>1542affe</i> is a merge commit and <i>-m 1</i> selects 
-        the first parent (<i>-m 2</i> would select the second merge parent).
+        parent 1 (<i>-m 2</i> would select parent 2) as target.
+        To find out which is parent 1 and which is parent 2, 
+        you can use the command <i>git log -1 1542affe</i>. 
+        The output mentions both parents in line 2 after the key word "Merge".
+        Parent 1 is mentioned first, parent 2 is mentioned second.
       </p>
       
       <h2>git revert b1..b2</h2>
