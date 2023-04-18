@@ -6,6 +6,13 @@
       <p>
         Create a new commit that reverts all changes of the commit <i>1542affe</i>.
         Build the commit message from the reverted commit, prepending it by the word "Revert".
+        <i>1542affe</i> must not be a merge commit.
+      </p>
+      
+      <h2>git revert -m 1 1542affe</h2>
+      <p>
+        Same as above, but <i>1542affe</i> is a merge commit and <i>-m 1</i> selects 
+        the first parent (<i>-m 2</i> would select the second merge parent).
       </p>
       
       <h2>git revert b1..b2</h2>
@@ -13,6 +20,9 @@
         Revert all the changes contained in branch b2 but not in branch b1.
         Create a new commit for every reverted commit. 
         Do this reverting in reverse order.
+        No merge commits are allowed on the path to be reverted.
+        If you must revert a merge commit you have to specify 
+        the parent number by option <i>-m 1</i> or <i>-m 2</i>.
       </p>
       
       <h2>git revert ^b1 b2</h2>
