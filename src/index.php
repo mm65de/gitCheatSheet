@@ -22,6 +22,7 @@
     <?php include 'add-reset.html'?> 
     <?php include 'restore.html'?> 
     <?php include 'revert.html'?> 
+    <?php include 'clean.html'?> 
     <?php include 'status.html'?> 
     <?php include 'log.html'?> 
     <?php include 'diff.html'?> 
