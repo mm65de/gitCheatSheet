@@ -30,6 +30,7 @@
     <?php include 'remote.html'?> 
     <?php include 'pull-push.html'?> 
     <?php include 'branch.html'?> 
+    <?php include 'merge.html'?> 
     <?php include 'stash.html'?> 
     <?php include 'rebase.html'?> 
     <?php include 'cherry-pick.html'?> 
