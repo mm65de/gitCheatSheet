@@ -1,1 +1,50 @@
-.
+
+    <div>
+      <h1>Git Revisions</h1>
+      
+      <h2>rev~  rev~1</h2>
+      <p>
+        Parent of revision <i>rev</i>.
+        If <i>rev</i> is a merge result and there are two parents, 
+        then both notations reference the first parent. 
+        That is the parent, that performed the merge operation, 
+        not the other, that was merged into the first one.
+      </p>
+      
+      <h2>rev~2</h2>
+      <p>
+        Grand-parent of revision <i>rev</i>.
+        If a revision has two parents, then the first is referenced,
+        i.e. the parent that performed the merge on that level.
+      </p>
+      
+      <h2>rev~3</h2>
+      <p>
+        Grand-grand-parent of revision <i>rev</i>.
+        If a revision has two parents, then the first is referenced,
+        i.e. the parent that performed the merge on that level.
+      </p>
+
+      <h2>rev^  rev^1</h2>
+      <p>
+        Parent of revision <i>rev</i>.
+        If <i>rev</i> is a merge result and there are two parents, 
+        then both notations reference the first parent. 
+        That is the parent, that performed the merge operation, 
+        not the other, that was merged into the first one.<br>
+        <b>Important:</b> If you are working on Windows, you need to duplicacte the ^.
+        A single ^ in Windows is a control character that tells the comman interpreter 
+        that the command is continued on the following line.
+      </p>
+      
+      <h2>rev^2</h2>
+      <p>
+        Second parent of revision <i>rev</i>.
+        Only valid if revision <i>rev</i> is a merge result, i.e. there are two parents.
+        <b>Important:</b> If you are working on Windows, you need to duplicacte the ^.
+        A single ^ in Windows is a control character that tells the comman interpreter 
+        that the command is continued on the following line.
+      </p>
+
+    </div>
+  
