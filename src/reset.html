@@ -1,7 +1,22 @@
 
     <div>
       <h1>git reset</h1>
-      
+
+      <p>
+        Please keep in mind that there is a big difference, if you specify a path or not.
+      </p>
+        
+      <h2>git reset <i>12affe</i></h2>
+      <h2>git reset <i>mytag</i></h2>
+      <h2>git reset <i>mybranch</i></h2>
+      <p>
+        Move HEAD and the current branch name to point to revision <i>12affe</i> / <i>mytag</i> / <i>mybranch</i>, 
+        but do not change any files in the workspace.
+        The difference between your unmodified workspace and the GIT status is shown as untracked files or still not staged changes.
+        If you add and commit everything, then you are back at the starting point.
+        So you have the chance to rewrite the GIT history by rearranging the commits.
+      </p>
+        
       <h2>git reset HEAD <i>pathspec</i></h2>
       <p>
         Remove all files that match the <i>pathspec</i> from the index.
