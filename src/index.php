@@ -20,7 +20,8 @@
     <?php include 'config.html'?> 
     <?php include 'init.html'?> 
     <?php include 'revision.html'?> 
-    <?php include 'add-reset.html'?> 
+    <?php include 'add.html'?> 
+    <?php include 'reset.html'?> 
     <?php include 'restore.html'?> 
     <?php include 'revert.html'?> 
     <?php include 'clean.html'?> 
