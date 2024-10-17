@@ -18,6 +18,17 @@
         Same as <i>fetch</i>, but delete locally all copies of remote branches,
         that do not exist anymore in the repo <i>origin</i> on server side.
       </p>
+
+      <h2>git fetch origin branch1:branch1</h2>
+      <p>
+        Fetch the newest revisions of the branch <i>branch1</i> in the repo <i>origin</i> 
+        to your local copy of repo <i>origin</i>. 
+        Then fast forward this branch to the newest revision, 
+        if this can be done via fast forward. 
+        Report the operation as "rejected" if a fast forward is not possible,
+        because of already committed local changes. 
+        For this operation your current branch must not be <i>branch1</i>.
+      </p>
       
       <h2>git pull</h2>
       <p>
