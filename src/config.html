@@ -78,13 +78,22 @@
         You use it by: <i>--pretty=mamue</i>
       </p>
       
-      <h2>git config --global alias.l  "log --graph --pretty=mamue"</h2>
+      <h2>
+        git config --global pretty.mamue2 
+          "    %Cred %h %Cgreen %ai %C(yellow) %ci %Cgreen %<(25,trunc) %an %C(yellow) %<(25,trunc) %cn %C(auto) %d %C(cyan) %s %Creset "
+      </h2>
+      <p>
+        Define a more detailed condensed format called <i>mamue2</i>.
+        You use it by: <i>--pretty=mamue2</i>
+      </p>
+      
+      <h2>git config --global alias.l  "log --graph --pretty=mamue2"</h2>
       <p>
         Define the new command <i>l</i>. 
         Now <i>git l</i> shows informative and compact history.
       </p>
       
-      <h2>git config --global alias.ll  "log --graph --pretty=mamue --remotes --branches --date-order"</h2>
+      <h2>git config --global alias.ll  "log --graph --pretty=mamue --remotes --branches --tags --date-order"</h2>
       <p>
         Define the new command <i>ll</i>. 
         Now <i>git ll</i> shows informative and compact history 
