@@ -45,12 +45,29 @@
         that summarizes the count of modified files, added lines and deleted lines.
       </p>
       
-      <h2>git log affe567 bcd1234.. tag42..</h2>
+      <h2>git log affe567 ^^bcd1234 ^^tag42</h2>
       <p>
-        Show revision <i>affe567</i> and all ancestor revisions 
-        in the current branch, but except the revision <i>bcd1234..</i>
+        Show revision <i>affe567</i> and all ancestor revisions, 
+        but except the revision <i>bcd1234</i>
         and its ancestors and except the revision 
         of tag <i>tag42</i> and all of its ancestors.
+        On Linux a single ^ is sufficent, on Windows you need ^^.
+      </p>
+      
+      <h2>git log affe..cafe</h2>
+      <p>
+        Show revision <i>cafe</i> and all ancestor revisions, 
+        but except the revision <i>affe</i> and its ancestors.
+      </p>
+      
+      <h2>git log affe..</h2>
+      <h2>git log affe..  HEAD~3</h2>
+      <h2>git log affe..HEAD  HEAD~3</h2>
+      <p>
+        Show all revisions in the current branch, 
+        but except the revision <i>affe</i> and its ancestors.
+        If no revision follows .. <i>immediately</i>, then HEAD is implicitely added.
+        HEAD~3 has no effect here because this rev is included in HEAD.
       </p>
       
       <h2>git log --grep="DR-360"</h2>
