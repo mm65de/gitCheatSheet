@@ -1,0 +1,30 @@
+
+    <div>
+      <h1>git checkout</h1>
+      
+      <h2>git checkout <i>mybranch</i></h2>
+      <p>
+        Switch to the existing branch <i>myBranch</i>.<br>
+        This means: <br>
+        &nbsp; 1. Set HEAD to this branch. <br>
+        &nbsp; 2. Adjust workspace files to match <i>myBranch</i>.<br>
+      </p>      
+      
+      <h2>git switch -c <i>myNew</i>  <i>myOld</i></h2>
+      <p>
+        Create the new branch <i>myNew</i> based on the already existing branch <i>myOld</i>, 
+        set HEAD to <i>myNew</i> and adjust workspace accordingly.     
+      </p>
+
+      <h2>git switch - </h2>
+      <p>Switch to the previous branch</p>
+
+      <h2>git switch @{-3} </h2>
+      <p>Switch to the third latest switch target.</p>
+
+      <h2>git reflog | findstr "moving from "</h2>
+      <h2>git reflog | grep -oE "moving from [^ ]+ to [^ ]+" | awk '{print $4}' | awk '!seen[$0]++' | head -n 10 </h2>
+      <p>Show the latest switch targets. The first variant is Windows, the second Linux.</p>
+      
+    </div>
+    

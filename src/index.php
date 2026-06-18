@@ -30,6 +30,7 @@
     <?php include 'diff.html'?> 
     <?php include 'tag.html'?> 
     <?php include 'remote.html'?> 
+    <?php include 'checkout.html'?> 
     <?php include 'pull-push.html'?> 
     <?php include 'branch.html'?> 
     <?php include 'merge.html'?> 
