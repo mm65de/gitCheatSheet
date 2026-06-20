@@ -23,8 +23,10 @@
       <p>Switch to the third latest switch target.</p>
 
       <h2>git reflog | findstr "moving from "</h2>
-      <h2>git reflog | grep -oE "moving from [^ ]+ to [^ ]+" | awk '{print $4}' | awk '!seen[$0]++' | head -n 10 </h2>
-      <p>Show the latest switch targets. The first variant is Windows, the second Linux.</p>
+      <p>Show the latest switch targets on <b>Windows</b></p>
+      
+      <h2>git reflog | grep -oE "moving from [^ ]+ to [^ ]+" | awk '{print $5}' | awk '!seen[$0]++' | head -n 10 </h2>
+      <p>Show the 10 latest switch targets on <b>Linux</b></p>
       
     </div>
     
